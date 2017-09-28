@@ -1,0 +1,53 @@
+package br.app.ex3;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.TextView;
+
+public class Salario extends Activity {
+
+	private EditText salario;
+	private RadioButton radio1;
+	private RadioButton radio2;
+	private RadioButton radio3;
+	private TextView resultado;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_salario);
+        
+        salario = (EditText) findViewById(R.id.editSalario);
+        radio1 = (RadioButton) findViewById(R.id.radio1);
+        radio2 = (RadioButton) findViewById(R.id.radio2);
+        radio3 = (RadioButton) findViewById(R.id.radio3);
+        resultado = (TextView) findViewById(R.id.resultado);
+    }
+    
+    public void Calcular(View btn){
+    	
+    	double valor,res;
+    	
+    	valor = Double.parseDouble(salario.getText().toString());
+    	
+    	if(radio1.isChecked()){
+    		res = (valor * 40)/100 ;
+    		resultado.setText(String.valueOf(res));
+    	}
+    	if(radio2.isChecked()){
+    		res = valor + (valor / 45);
+    		resultado.setText(String.valueOf(res));
+    	}
+    	if(radio3.isChecked()){
+    		res = valor + (valor / 50);
+    		resultado.setText(String.valueOf(res));
+    	}
+    	
+    	salario.setText(null);
+    	
+    	salario.requestFocus();
+    }
+}

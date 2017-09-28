@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change Layout" description="Change Layout" file="/Ex4/res/layout/activity_conversor_dolar.xml" flags="6" flatten="true" id="com.android.ide.eclipse.adt.refactoring.convert" proj="/Ex4" sel-end="289" sel-start="0" stamp="1504970339712" type="android.widget.LinearLayout"/>
+</session>

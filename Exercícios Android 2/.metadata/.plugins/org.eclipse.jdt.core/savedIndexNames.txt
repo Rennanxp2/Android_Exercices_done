@@ -1,0 +1,7 @@
+INDEX VERSION 1.126+C:\Users\Rennan Zaniboni\Desktop\Exercícios Android 2\.metadata\.plugins\org.eclipse.jdt.core
+493670787.index
+4194271827.index
+3680723915.index
+2398663365.index
+1626788841.index
+2120943783.index

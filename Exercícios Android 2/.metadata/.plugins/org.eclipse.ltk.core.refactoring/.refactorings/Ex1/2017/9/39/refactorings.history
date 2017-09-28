@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Change Layout" description="Change Layout" file="/Ex1/res/layout/activity_balaio.xml" flags="6" flatten="true" id="com.android.ide.eclipse.adt.refactoring.convert" proj="/Ex1" sel-end="289" sel-start="0" stamp="1506387001379" type="android.widget.LinearLayout"/>
+</session>

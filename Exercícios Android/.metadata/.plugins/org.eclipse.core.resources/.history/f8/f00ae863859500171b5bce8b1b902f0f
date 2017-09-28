@@ -1,0 +1,31 @@
+package br.ex6;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class Media extends Activity {
+
+	private EditText editNota1;
+	private EditText editNota2;
+	private TextView textResultado;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_media);
+        
+        editNota1 = (EditText) findViewById (R.id.editNota1);
+        editNota2 = (EditText) findViewById (R.id.editNota2);
+        textResultado = (EditText) findViewById (R.id.textResultado);
+    }
+    
+    public void Calcular(View cal){
+    	
+    	float a, b, res;
+    	
+    	a = Float.parseFloat(editNota1.getText().toString());
+    }
+}

@@ -1,0 +1,21 @@
+package br.app.ex2;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class Rodizio extends Activity {
+
+	private EditText editText1;
+	private EditText editText2;
+	private TextView resultado;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_rodizio);
+        
+        editText1 = (EditText) findViewById(R.id.editText1);
+    }
+}

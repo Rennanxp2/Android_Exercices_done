@@ -1,0 +1,22 @@
+package br.app.ex1;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class Balaio extends Activity {
+	
+	private TextView editText1;
+	private TextView editText2;
+	private TextView editText3;
+	private TextView editText4;
+	private TextView editText5;
+	private TextView editText6;
+	
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_balaio);
+    }
+}

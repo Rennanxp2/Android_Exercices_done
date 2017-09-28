@@ -1,0 +1,29 @@
+package br.app.ex1;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class Balaio extends Activity {
+	
+	private TextView editText01;
+	private TextView editText02;
+	private TextView editText03;
+	private TextView editText04;
+	private TextView editText05;
+	private TextView editText06;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_balaio);
+        
+        editText01 = (EditText) findViewById(R.id.editText01);
+        editText01 = (EditText) findViewById(R.id.EditText02);
+        editText01 = (EditText) findViewById(R.id.EditText03);
+        editText01 = (EditText) findViewById(R.id.EditText04);
+        editText01 = (EditText) findViewById(R.id.EditText05);
+        editText01 = (EditText) findViewById(R.id.EditText06);
+    }
+}

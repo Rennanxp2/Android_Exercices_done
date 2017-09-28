@@ -1,0 +1,46 @@
+package br.ex6;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class Triangulos extends Activity {
+
+	private EditText ValorA;
+	private EditText ValorB;
+	private EditText ValorC;
+	private TextView Resultado;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_triangulos);
+        
+        ValorA = (EditText) findViewById(R.id.editLadoA);
+        ValorB = (EditText) findViewById(R.id.editLadoB);
+        ValorC = (EditText) findViewById(R.id.editLadoC);
+        Resultado = (TextView) findViewById(R.id.textResultado);
+    }
+    
+    public void Calcular(View media){
+    	
+        int a, b, c, res;
+        
+    	a = Integer.parseInt(ValorA.getText().toString());
+    	b = Integer.parseInt(ValorB.getText().toString());
+    	c = Integer.parseInt(ValorC.getText().toString());
+    	
+    	if(a == b && b == c){
+            Context contexto = getApplicationContext();
+            String texto = "Equilátero";
+            int duracao = Toast.LENGTH_LONG;
+
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
+    	}
+    }
+}

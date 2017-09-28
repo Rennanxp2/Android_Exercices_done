@@ -1,0 +1,60 @@
+package br.app.ex2;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class Rodizio extends Activity {
+
+	private EditText editText2;
+	private TextView resultado;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_rodizio);
+        
+        editText2 = (EditText) findViewById(R.id.editText2);
+        resultado = (TextView) findViewById(R.id.txtResultado);
+    }
+    
+    public void Calcular (View btn){
+    	
+    	int valor, res;
+    	int pri,seg,ter,quar;
+    	int resto1,resto2,resto3,resto4;
+    	String segunda = "Segunda",terca = "Terça",quarta = "Quarta",quinta = "Quinta",sexta = "Sexta";
+    	
+    	valor = Integer.parseInt(editText2.getText().toString());
+    	
+    	quar = valor / 10000;
+    	resto1   = valor % 10000;
+    	
+    	ter = resto1 / 1000;
+    	resto2    = resto1 % 1000;
+    	
+    	seg = resto2 / 100;
+    	resto3    = resto2 % 100;
+    	
+    	pri = resto3 / 10;
+    	resto4    = resto3 % 10;
+    	
+    	if(resto4 == 1 || resto1 == 2){
+    		resultado.setText(String.valueOf(segunda));
+    	}
+    	if(resto4 == 3 || resto1 == 4){
+    		resultado.setText(String.valueOf(terca));
+    	}
+    	if(resto4 == 5 || resto1 == 6){
+    		resultado.setText(String.valueOf(quarta));
+    	}
+    	if(resto4 == 7 || resto1 == 8){
+    		resultado.setText(String.valueOf(quinta));
+    	}
+    	if(resto4 == 9 || resto1 == 10){
+    		resultado.setText(String.valueOf(sexta));
+    	}
+    }
+}
