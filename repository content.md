@@ -1,2 +1,3 @@
 # Mobile_Android_Java
-Some exercises made for the android mobile device.
+
+simple exercises to start programming and understand the logic behind mobile programming.
